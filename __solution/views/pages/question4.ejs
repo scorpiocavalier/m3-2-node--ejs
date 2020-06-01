@@ -1,23 +1,23 @@
 <%- include('../partials/head') %>
 <body>
-    <%- include('../partials/header') %>
-    <div class='main'>
-        <h2>Part 1</h2>
-        <div class='content'>
-            <%- include('../partials/questions/4') %>
-            <div class='box answer'>
-                <h3>Answer</h3>
-                <!-- render answer here -->
-                <ol>
-                    <li>1. <%= topThree[0] %></li>
-                    <li>2. <%= topThree[1] %></li>
-                    <li>3. <%= topThree[2] %></li>
-                </ol>
-            </div>
-        </div>
-        <nav>
-            <a href='/question4'>Previous</a>
-            <a href='/question5'>Next</a>
-        </nav>
+  <%- include('../partials/header') %>
+  <div class="main">
+    <h2>Part 1</h2>
+    <div class="content">
+      <%- include('../partials/questions/4') %>
+      <div class="box answer">
+        <h3>Answer</h3>
+        <!-- render answer here -->
+        <ol>
+          <li>1. <%= topThree[0] %></li>
+          <li>2. <%= topThree[1] %></li>
+          <li>3. <%= topThree[2] %></li>
+        </ol>
+      </div>
     </div>
+    <nav>
+      <a href="/question4">Previous</a>
+      <a href="/question5">Next</a>
+    </nav>
+  </div>
 </body>

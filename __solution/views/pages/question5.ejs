@@ -1,20 +1,20 @@
 <%- include('../partials/head') %>
 <body>
-    <%- include('../partials/header') %>
-    <div class='main'>
-        <h2>Part 1</h2>
-        <div class='content'>
-            <%- include('../partials/questions/5') %>
-            <div class='box answer'>
-                <h3>Answer</h3>
-                <!-- render answer here -->
-                <h4>Top 5 girls names in the England and Wales</h4>
-                <ol>
-                    <% popularGirlNames.forEach((name, id) => { %>
-                        <li><%= id + 1 %>. <%= name %></li>
-                    <% }); %>
-                </ol>
-            </div>
-        </div>
+  <%- include('../partials/header') %>
+  <div class="main">
+    <h2>Part 1</h2>
+    <div class="content">
+      <%- include('../partials/questions/5') %>
+      <div class="box answer">
+        <h3>Answer</h3>
+        <!-- render answer here -->
+        <h4>Top 5 girls names in the England and Wales</h4>
+        <ol>
+          <% popularGirlNames.forEach((name, id) => { %>
+          <li><%= id + 1 %>. <%= name %></li>
+          <% }); %>
+        </ol>
+      </div>
     </div>
+  </div>
 </body>
