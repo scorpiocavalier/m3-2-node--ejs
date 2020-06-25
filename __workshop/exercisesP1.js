@@ -1,5 +1,6 @@
 // Getting familiar with EJS and the project folder/file structure.
 
+// -----------------------------------------------
 // Question 1
 // -----------------------------------------------
 const q1 = (req, res) => {
@@ -7,18 +8,18 @@ const q1 = (req, res) => {
 
   res.render('pages/question1');
 };
-// -----------------------------------------------
 
+// -----------------------------------------------
 // Question 2
 // -----------------------------------------------
 const q2 = (req, res) => {
   // pass this variable to the ejs file and render it in the answer box.
   const sentence = '<p>This is the way.</p>';
 
-  res.render('pages/question2', { sentence: sentence });
+  res.render('pages/question2', {});
 };
-// -----------------------------------------------
 
+// -----------------------------------------------
 // Question 3
 // -----------------------------------------------
 const q3 = (req, res) => {
@@ -35,8 +36,8 @@ const q3 = (req, res) => {
 
   res.render('pages/question3');
 };
-// -----------------------------------------------
 
+// -----------------------------------------------
 // Question 4
 // -----------------------------------------------
 const q4 = (req, res) => {
@@ -44,8 +45,8 @@ const q4 = (req, res) => {
 
   res.render('pages/question4');
 };
-// -----------------------------------------------
 
+// -----------------------------------------------
 // Question 5
 // -----------------------------------------------
 const q5 = (req, res) => {
@@ -53,7 +54,6 @@ const q5 = (req, res) => {
 
   res.render('pages/question5');
 };
-// -----------------------------------------------
 
 // We export the functions so that they may be 'required' or imported in other files.
 module.exports = { q1, q2, q3, q4, q5 };

@@ -10,7 +10,7 @@ This is where things start to get a little more complicated, but a heck of a lot
 2. Open a terminal window and type `yarn install`
 3. Start up the server by typing `yarn dev`
 
-Your node application is now running at https://localhost:8000
+Your node application is now running at http://localhost:8000
 
 ### ⚠️ Live Server, NO MORE! ⚠️
 
@@ -85,15 +85,17 @@ If you look in the `package.json` file you will see all of the external dependen
 
 ### Where are the questions?
 
-Questions can be found at the `/question<#>` endpoints in the browser.
+This workshop is a little "meta". The workshop contains a UI for the tutorial. As go through the questions, you will actually work on the UI of the tutorial and improve the app. You will find all of the questions can be found at the `/question<#>` endpoints in the browser.
 
 e.g. Question 1 is located at `https://localhost:8000/question1`. Type that in the browser. The question should appear!
+
+<img src="__lecture/assets/ex1.png" />
 
 ### How do I answer the questions?
 
 You will need to use two files to answer most of the questions.
 
-You will write all data-manipulating JS in the `exercisesP<#>.js` file, and when applicable, the HTML output in the `..views/pages/question<#>.ejs` file.
+You will write all data-manipulating JS in the `exercisesP1.js` file for questions 1 to 5, and when applicable, the HTML output in the `..views/pages/question<#>.ejs` file.
 
 ## Note
 
