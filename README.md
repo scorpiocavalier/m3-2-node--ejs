@@ -1,8 +1,4 @@
-# 3.1 Node.Js: Introduction
-
-Welcome to your first Node app!!
-
-This is where things start to get a little more complicated, but a heck of a lot more fun!
+# 3.2 Node.Js: EJS
 
 ## Setup
 
@@ -11,12 +7,6 @@ This is where things start to get a little more complicated, but a heck of a lot
 3. Start up the server by typing `yarn dev`
 
 Your node application is now running at http://localhost:8000
-
-### ⚠️ Live Server, NO MORE! ⚠️
-
-**We will no longer be using the "Live Server" extension in VS Code.**
-
-When we type `yarn dev` in the terminal, it will spin up a `node` environment that will render our server-side app to the browser.
 
 ## Deeper Dive into this app
 
