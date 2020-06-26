@@ -101,7 +101,13 @@ You will write all data-manipulating JS in the `exercisesP1.js` file for questio
 
 The solution folder contains solutions but none that can be run. They are technically outside of the app. You can locate the file you are working on and compare with your solution.
 
-## Stretch Goal(s)
+## Completion Grid
+
+| 75% Minimum | 100% Complete | Stretch     |
+| ----------- | ------------- | ----------- |
+| `Question9` | `Question10`  | _see below_ |
+
+### Stretch Goal(s)
 
 - Are there any other optimizations that you could make?
 - Create a new endpoint. `/bacon` where the visitor can see an inspiring message from you.
