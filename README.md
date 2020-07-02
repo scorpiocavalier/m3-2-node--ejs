@@ -14,14 +14,6 @@ Your node application is now running at http://localhost:8000
 
 If you look in the `package.json` file you will see all of the external dependencies, or modules, that we will need for today's workshop.
 
-| package                                          | Description                                                                                                                                                       |
-| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [express](https://www.npmjs.com/package/express) | Fast, unopinionated, minimalist web framework for node.                                                                                                           |
-| [nodemon](https://www.npmjs.com/package/nodemon) | nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected. |
-| [morgan](https://www.npmjs.com/package/morgan)   | HTTP request logger middleware for node.js                                                                                                                        |
-| [ejs](https://www.npmjs.com/package/ejs)         | Embedded JavaScript templates.                                                                                                                                    |
-| [moment](https://www.npmjs.com/package/moment)   | A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.                                                                |
-
 ### File Structure
 
 ```
@@ -63,7 +55,7 @@ If you look in the `package.json` file you will see all of the external dependen
 - `<%#` Comment tag, no execution, no output
 - `%>` Plain ending tag
 
-#### 📝 Note
+#### 📝 Notes
 
 - When you run `yarn install`, yarn reads the `package.json` and downloads the dependencies in the `node_modules` folder. It will also generate a `yarn.lock` file if it doesn't already exist; if it does exist, it will defer to the version numbers in that file, rather than taking the most recent version available remotely. This is to ensure compatibility and prevent _breaking_ changes in dependencies from, well, breaking our app.
 - `ejs` files are basically supercharged `html` files. We can pass in JavaScript values. It allows us to do TONS of cool stuff. 😀
@@ -93,9 +85,9 @@ The solution folder contains solutions but none that can be run. They are techni
 
 ## Completion Grid
 
-| 75% Minimum | 100% Complete | Stretch     |
-| ----------- | ------------- | ----------- |
-| `Question9` | `Question10`  | _see below_ |
+| 75% Minimum         | 100% Complete        | Stretch     |
+| ------------------- | -------------------- | ----------- |
+| `Question9` (incl.) | `Question10` (incl.) | _see below_ |
 
 ### Stretch Goal(s)
 
