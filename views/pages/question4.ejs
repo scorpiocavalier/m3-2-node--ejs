@@ -1,5 +1,7 @@
-<%- include('../partials/head.ejs') %>
+<%- include('../partials/head') %>
+<%- include('../partials/navigation') %> 
 
+<div class="content">
 <%- include('../partials/questions/4') %>
 <div class="box answer">
   <h3>Answer</h3>
@@ -8,6 +10,7 @@
     <li><%= name %></li>
     <% }) %>
   </ul>
-</div>
+</div> <!-- answer box -->
+</div> <!-- content -->
 
-<%- include('../partials/endBody.ejs') %>
+<%- include('../partials/endBody') %>

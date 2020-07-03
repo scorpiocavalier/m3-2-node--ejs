@@ -1,18 +1,19 @@
-<%- include('../partials/head.ejs') %> 
+<%- include('../partials/head') %>
+<%- include('../partials/navigation') %> 
 
-<%- include('../partials/questions/3') %>
-<div class="box answer">
-  <h3>Answer</h3>
+<div class="content">
+  <%- include('../partials/questions/3') %>
+  <div class="box answer">
+    <h3>Answer</h3>
+    <ul>
+      <li><%= props.homer.name %> </li>
+      <li><%= props.homer.dob %> </li>
+      <li><%= props.homer.profession %> </li>
+      <li><%= props.homer.favoriteFood %> </li>
+      <li><%= props.homer.favoriteBeverage %> </li>
+      <li><img src="<%= props.homer.imageUrl %>" alt=""></li>
+    </ul>
+  </div> <!-- answer box -->
+</div> <!-- content -->
 
-  <ul>
-    <li><%= props.homer.name %> </li>
-    <li><%= props.homer.dob %> </li>
-    <li><%= props.homer.profession %> </li>
-    <li><%= props.homer.favoriteFood %> </li>
-    <li><%= props.homer.favoriteBeverage %> </li>
-    <li><img src="<%= props.homer.imageUrl %>" alt=""></li>
-  </ul>
-  
-</div>
-
-<%- include('../partials/endBody.ejs') %> 
+<%- include('../partials/endBody') %>

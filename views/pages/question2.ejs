@@ -1,15 +1,13 @@
-<%- include('../partials/head.ejs') %>
+<%- include('../partials/head') %>
+<%- include('../partials/navigation') %> 
 
+<div class="content">
 <%- include('../partials/questions/2') %>
-<div class="box answer">
-  <h3>Answer</h3>
-  <!-- render answer here -->
-  <!-- Notice that the commenting inside the ejs brackets is JS. -->
-  
-  <p><%- props.sentence %></p> <!-- unescaped HTML -->
-  <p><%= props.sentence %></p> <!--   escaped HTML -->
+  <div class="box answer">
+    <h3>Answer</h3>    
+    <p><%- props.sentence %></p> <!-- unescaped HTML -->
+    <p><%= props.sentence %></p> <!--   escaped HTML -->
+  </div> <!-- answer box -->
+</div> <!-- content -->
 
-  <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
-</div>
-
-<%- include('../partials/endBody.ejs') %> 
+<%- include('../partials/endBody') %> 

@@ -1,9 +1,12 @@
-<%- include('../partials/head.ejs') %>
+<%- include('../partials/head') %>
+<%- include('../partials/navigation') %> 
 
-<%- include('../partials/questions/6') %>
-<div class="box answer">
-  <h3>Answer</h3>
-  <p>No answer required here...</p>
-</div>
+<div class="content">
+  <%- include('../partials/questions/6') %>
+  <div class="box answer">
+    <h3>Answer</h3>
+    <p>No answer required here...</p>
+  </div> <!-- answer box -->
+</div> <!-- content -->
 
-<%- include('../partials/endBody.ejs') %>
+<%- include('../partials/endBody') %>

@@ -1,12 +1,15 @@
-<%- include('../partials/head.ejs') %>
+<%- include('../partials/head') %>
+<%- include('../partials/navigation') %> 
 
-<%- include('../partials/questions/1') %>
-<div class="box answer">
-  <h3>Answer</h3>
-  <ul>
-    <li>E - Embedded, Elegant, Efficient</li>
-    <li>JS - Javascript</li>
-  </ul>
-</div>
+<div class="content">
+  <%- include('../partials/questions/1') %>
+  <div class="box answer">
+    <h3>Answer</h3>
+    <ul>
+      <li>E - Embedded, Elegant, Efficient</li>
+      <li>JS - Javascript</li>
+    </ul>
+  </div> <!-- answer box -->
+</div> <!-- content -->
 
-<%- include('../partials/endBody.ejs') %>
+<%- include('../partials/endBody') %>
