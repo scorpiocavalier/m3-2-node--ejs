@@ -1,51 +1,46 @@
-'use strict';
+"use strict";
 
 // import the needed node_modules.
-const express = require('express');
-const morgan = require('morgan');
+const express = require("express")
+const morgan = require("morgan")
+const PORT = 4000
 
-// We need to "require" the files whose content we reference in this file.
-const exercisesP1 = require('./__workshop/exercisesP1');
+let props = {
+  pageNumber: 1,
+	sentence: "<p>This is the way.</p>",
+	popularGirlNames: ["Olivia", "Ruby", "Emily", "Grace", "Jessica"],
+  homer: {
+    imageUrl:
+      "https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png",
+    name: "Homer Jay Simpson",
+    dob: "May 12, 1956",
+    profession: "Low-level Safety Inspector",
+    favoriteFood: "Donuts",
+    favoriteBeverage: "Duff Beer",
+  }
+}
 
-const PORT = 4000;
-
-const  q6 = (req, res) => res.render('pages/question6');
-const  q7 = (req, res) => res.render('pages/question7');
-const  q8 = (req, res) => res.render('pages/question8');
-const  q9 = (req, res) => res.render('pages/question9');
-const q10 = (req, res) => res.render('pages/question10');
-
+// App
 express()
-    // This will give us will log more info to the console. see https://www.npmjs.com/package/morgan
-    .use(morgan('tiny'))
-    // Any requests for static files will go into the public folder
-    .use(express.static('public'))
-    // We are using ejs as our templating engine. see https://ejs.co/
-    .set('view engine', 'ejs')
+  .use(morgan("tiny"))
+  .use(express.static("public"))
+  .set("view engine", "ejs")
 
-    // endpoints
-    .get('/question1', exercisesP1.q1)
-    .get('/question2', exercisesP1.q2)
-    .get('/question3', exercisesP1.q3)
-    .get('/question4', exercisesP1.q4)
-    .get('/question5', exercisesP1.q5)
-    .get('/question6', q6)
-    .get('/question7', q7)
-    .get('/question8', q8)
-    .get('/question9', q9)
-    .get('/question10', q10)
-    
-    // this serves up the homepage
-    .get('/', (req, res) => {
-        res.send('This is the homepage... it\'s empty :(');
-    })
+  // endpoints
+  .get("/question:number", (req, res) => {
+		props.pageNumber = req.params.number
+		res.render(`pages/question${props.pageNumber}`, { props })
+	})
 
-    // this is our catch all endpoint. If a user navigates to any endpoint that is not
-    // defined above, they get to see our 404 page.
-    .get('*', (req, res) => {
-        res.status(404);
-        res.send('404... This is not the page you are looking for.');
-    })
+  // this serves up the homepage
+  .get("/", (req, res) => res.send("This is the homepage... it's empty :("))
 
-    // Node spins up our server and sets it to listen on the PORT we defined above.
-    .listen(PORT, () => console.log(`Listening on port ${PORT}`));
+  // this is our catch all endpoint. If a user navigates to any endpoint that is not
+  // defined above, they get to see our 404 page.
+  .get("*", (req, res) => {
+    res.status(404)
+    res.send("404... This is not the page you are looking for.")
+  })
+
+  // Node spins up our server and sets it to listen on the PORT we defined above.
+  .listen(PORT, () => console.log(`Listening on port ${PORT}`))

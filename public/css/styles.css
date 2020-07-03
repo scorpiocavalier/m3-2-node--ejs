@@ -46,6 +46,24 @@ ol, ul { margin-bottom: 1em; }
     padding: 12px 14px;
 }
 
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previous, .next {
+    border: 1px solid #707070;
+    background-color: lightsteelblue;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.previous:hover, .next:hover {
+    background-color: #99CCFF;
+}
+
 @media screen and (min-width: 900px) {
     .content {
         flex-direction: row;

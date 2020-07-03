@@ -5,9 +5,9 @@
   <h3>Answer</h3>
   <!-- render answer here -->
   <!-- Notice that the commenting inside the ejs brackets is JS. -->
-
-  <p><%- sentence %></p> 
-  <p><%= sentence %></p> <!-- escapes HTML -->
+  
+  <p><%- props.sentence %></p> <!-- unescaped HTML -->
+  <p><%= props.sentence %></p> <!--   escaped HTML -->
 
   <!-- Keep that in mind for later. Everything between those brackets IS JavaScript. -->
 </div>

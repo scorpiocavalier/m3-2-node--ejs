@@ -4,7 +4,7 @@
 <div class="box answer">
   <h3>Answer</h3>
   <ul>
-    <% topGirlNames.forEach(name => { %>
+    <% props.popularGirlNames.slice(0, 3).forEach(name => { %>
     <li><%= name %></li>
     <% }) %>
   </ul>
