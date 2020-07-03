@@ -37,6 +37,7 @@ ol, ul { margin-bottom: 1em; }
     margin-bottom: 24px;
     min-height: 200px;
     padding: 18px;
+    word-wrap: break-word;
 }
 
 .question .sample {
@@ -50,5 +51,9 @@ ol, ul { margin-bottom: 1em; }
         flex-direction: row;
         justify-content: space-between;
         min-height: 500px;
+    }
+
+    .answer {
+        width: 50%;
     }
 }

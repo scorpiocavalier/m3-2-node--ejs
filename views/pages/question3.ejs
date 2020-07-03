@@ -3,7 +3,14 @@
 <%- include('../partials/questions/3') %>
 <div class="box answer">
   <h3>Answer</h3>
-  <!-- render answer here -->
+  <ul>
+    <li>imageUrl: <%= homer.imageUrl %> </li>
+    <li>name: <%= homer.name %> </li>
+    <li>dob: <%= homer.dob %> </li>
+    <li>profession: <%= homer.profession %> </li>
+    <li>favoriteFood: <%= homer.favoriteFood %> </li>
+    <li>favoriteBeverage: <%= homer.favoriteBeverage %> </li>
+  </ul>
 </div>
 
 <%- include('../partials/endBody.ejs') %> 
