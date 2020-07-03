@@ -9,10 +9,10 @@ const exercisesP1 = require('./__workshop/exercisesP1');
 
 const PORT = 8000;
 
-const q6 = (req, res) => res.render('pages/question6');
-const q7 = (req, res) => res.render('pages/question7');
-const q8 = (req, res) => res.render('pages/question8');
-const q9 = (req, res) => res.render('pages/question9');
+const  q6 = (req, res) => res.render('pages/question6');
+const  q7 = (req, res) => res.render('pages/question7');
+const  q8 = (req, res) => res.render('pages/question8');
+const  q9 = (req, res) => res.render('pages/question9');
 const q10 = (req, res) => res.render('pages/question10');
 
 express()
