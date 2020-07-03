@@ -42,8 +42,8 @@ const q3 = (req, res) => {
 // -----------------------------------------------
 const q4 = (req, res) => {
   const popularGirlNames = ['Olivia', 'Ruby', 'Emily', 'Grace', 'Jessica'];
-
-  res.render('pages/question4');
+  const topGirlNames = popularGirlNames.slice(0, 3)
+  res.render('pages/question4', { topGirlNames });
 };
 
 // -----------------------------------------------

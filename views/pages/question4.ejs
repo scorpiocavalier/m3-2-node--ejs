@@ -3,7 +3,11 @@
 <%- include('../partials/questions/4') %>
 <div class="box answer">
   <h3>Answer</h3>
-  <!-- render answer here -->
+  <ul>
+    <% topGirlNames.forEach(name => { %>
+     <li><%= name %></li>
+    <% }) %>
+  </ul>
 </div>
 
 <%- include('../partials/endBody.ejs') %>
