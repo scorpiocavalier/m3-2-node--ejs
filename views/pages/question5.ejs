@@ -3,7 +3,11 @@
 <%- include('../partials/questions/5') %>
 <div class="box answer">
   <h3>Answer</h3>
-  <!-- render answer here -->
+  <ol>
+    <% popularGirlNames.forEach((name, index) => { %>
+    <li><%= ++index %>. <%= name %></li>
+    <% }) %>
+  </ol>
 </div>
 
 <%- include('../partials/endBody.ejs') %>
