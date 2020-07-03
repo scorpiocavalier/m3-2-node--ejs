@@ -43,3 +43,31 @@ h4 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
+
+#fourOhFour {
+    width: 50%;
+}
+
+#fourOhFour h3, #space-invaders {
+    font-size: 60px;
+    font-family: fantasy;
+    width: 100%;
+}
+
+#fourOhFour p {
+    font-size: 20px;
+    width: 100%;
+}
+
+#fourOhFour a {
+    font-size: 24px;
+    width: 100%;
+}
+
+#space-invaders {
+    margin: 20px 0;
+}
+
+iframe {
+    width: 100%;
+}

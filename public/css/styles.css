@@ -18,6 +18,15 @@ header {
     background-color: lightsteelblue;
 }
 
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
 .main {
     flex: 1 0 auto;
     padding: 24px;
@@ -52,7 +61,7 @@ ol, ul { margin-bottom: 1em; }
     align-items: center;
 }
 
-.previous, .next {
+.navBtn {
     border: 1px solid #707070;
     background-color: lightsteelblue;
     cursor: pointer;
@@ -60,8 +69,13 @@ ol, ul { margin-bottom: 1em; }
     text-decoration: none;
 }
 
-.previous:hover, .next:hover {
+.navBtn:hover {
     background-color: #99CCFF;
+}
+
+.question-link {
+    text-decoration: none;
+    
 }
 
 @media screen and (min-width: 900px) {
