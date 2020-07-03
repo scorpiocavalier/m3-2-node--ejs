@@ -3,14 +3,16 @@
 <%- include('../partials/questions/3') %>
 <div class="box answer">
   <h3>Answer</h3>
+
   <ul>
-    <li>imageUrl: <%= homer.imageUrl %> </li>
-    <li>name: <%= homer.name %> </li>
-    <li>dob: <%= homer.dob %> </li>
-    <li>profession: <%= homer.profession %> </li>
-    <li>favoriteFood: <%= homer.favoriteFood %> </li>
-    <li>favoriteBeverage: <%= homer.favoriteBeverage %> </li>
+    <li><%= homer.name %> </li>
+    <li><%= homer.dob %> </li>
+    <li><%= homer.profession %> </li>
+    <li><%= homer.favoriteFood %> </li>
+    <li><%= homer.favoriteBeverage %> </li>
+    <li><img src="<%= homer.imageUrl %>" alt=""></li>
   </ul>
+  
 </div>
 
 <%- include('../partials/endBody.ejs') %> 

@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-  
+
 header {
     flex: 0 0 60px;
     display: flex;
@@ -17,7 +17,7 @@ header {
     padding: 0 24px;
     background-color: lightsteelblue;
 }
-  
+
 .main {
     flex: 1 0 auto;
     padding: 24px;
