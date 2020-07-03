@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<head>
-  <title>Node: Workshop 2</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Node: Workshop 2</h1>
-  </header>
-  <div class="main">
-    <h2>Part 2</h2>
-    <div class="content">
-      <%- include('../partials/questions/10') %>
-      <div class="box answer">
-        <h3>Answer</h3>
-        <!-- render answer here -->
-        <p>No answer required here...</p>
-      </div>
-    </div>
-  </div>
-</body>
+<%- include('../partials/head.ejs') %>
+
+<%- include('../partials/questions/10') %>
+<div class="box answer">
+  <h3>Answer</h3>
+  <!-- render answer here -->
+  <p>No answer required here...</p>
+</div>
+
+<%- include('../partials/endBody.ejs') %>
