@@ -10,13 +10,13 @@ let props = {
 	sentence: "<p>This is the way.</p>",
 	popularGirlNames: ["Olivia", "Ruby", "Emily", "Grace", "Jessica"],
   homer: {
-    imageUrl:
-      "https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png",
     name: "Homer Jay Simpson",
     dob: "May 12, 1956",
     profession: "Low-level Safety Inspector",
     favoriteFood: "Donuts",
     favoriteBeverage: "Duff Beer",
+    imageUrl:
+      "https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png"
   }
 }
 

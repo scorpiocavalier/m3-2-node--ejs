@@ -6,12 +6,13 @@
   <div class="box answer">
     <h3>Answer</h3>
     <ul>
-      <li><%= props.homer.name %> </li>
-      <li><%= props.homer.dob %> </li>
-      <li><%= props.homer.profession %> </li>
-      <li><%= props.homer.favoriteFood %> </li>
-      <li><%= props.homer.favoriteBeverage %> </li>
-      <li><img src="<%= props.homer.imageUrl %>" alt=""></li>
+      <% for(let info in props.homer) { %>
+        <% if (info === 'imageUrl') { %>
+          <li><img src="<%= props.homer[info] %>" alt="Homer Simpson"></li>
+        <% } else { %>
+          <li><%= props.homer[info] %></li>
+        <% } %>
+      <% } %>
     </ul>
   </div> <!-- answer box -->
 </div> <!-- content -->
