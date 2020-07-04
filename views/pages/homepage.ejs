@@ -3,16 +3,9 @@
 <h3 id='homepage-heading'>Get Familiar with <%% EJS %></h3>
 <div id='grid-container'>
   <ul id='question-grid'>
-    <li><a class="question-link" href="/question1">Question 1</a></li>
-    <li><a class="question-link" href="/question2">Question 2</a></li>
-    <li><a class="question-link" href="/question3">Question 3</a></li>
-    <li><a class="question-link" href="/question4">Question 4</a></li>
-    <li><a class="question-link" href="/question5">Question 5</a></li>
-    <li><a class="question-link" href="/question6">Question 6</a></li>
-    <li><a class="question-link" href="/question7">Question 7</a></li>
-    <li><a class="question-link" href="/question8">Question 8</a></li>
-    <li><a class="question-link" href="/question9">Question 9</a></li>
-    <li><a class="question-link" href="/question10">Question 10</a></li>
+    <% for( let number = 1; number <= 10; number++ ) { %>
+      <li><a class="question-link" href="/question<%= number %>">Question <%= number %></a></li>
+    <% } %>
   </ul>
 </div>
 
