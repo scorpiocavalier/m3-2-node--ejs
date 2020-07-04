@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import 'css-reset.css';
 @import 'typography.css';
+
+:root {
+    --node-green: #3C873A;
+    --lighter-node-green: #68A063;
+    --node-gray: #303030ea;
+}
 
 body {
     background: #fafafa;
@@ -15,7 +22,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #808080;
     padding: 0 24px;
-    background-color: lightsteelblue;
+    background-color: var(--node-green);
 }
 
 header a {
@@ -24,7 +31,7 @@ header a {
 }
 
 a:visited {
-    color: black;
+    color: #fafafa;
 }
 
 .main {
@@ -38,10 +45,11 @@ ol, ul { margin-bottom: 1em; }
     display: flex;
     flex-direction: column;
     margin-top: 24px;
+    background-color: white;
 }
 
 .box {
-    border: 1px solid #707070;
+    border: 1px solid var(--node-gray);
     flex: 0 0 49%;
     margin-bottom: 24px;
     min-height: 200px;
@@ -50,7 +58,7 @@ ol, ul { margin-bottom: 1em; }
 }
 
 .question .sample {
-    border: 1px solid #cacaca;
+    border: 1px solid var(--node-gray);
     margin: 12px 32px 6px 0;
     padding: 12px 14px;
 }
@@ -59,23 +67,68 @@ ol, ul { margin-bottom: 1em; }
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--node-gray);
 }
 
 .navBtn {
-    border: 1px solid #707070;
-    background-color: lightsteelblue;
+    border: 1px solid var(--node-gray);
     cursor: pointer;
     padding: 0.5em 1em;
     text-decoration: none;
+    background-color: var(--node-green);
+    width: 130px;
+    text-align: center;
 }
 
 .navBtn:hover {
-    background-color: #99CCFF;
+    background-color: var(--lighter-node-green);
+}
+
+#homepage-heading {
+    text-align: center;
+}
+
+#grid-container {
+    width: 100%;
+}
+
+#question-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#question-grid li {
+    background-color: var(--node-green);
+    flex-grow: 1;
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+}
+
+#question-grid li:hover {
+    background-color: var(--lighter-node-green);
 }
 
 .question-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
-    
+}
+
+#fourOhFour {
+    width: 50%;
+}
+
+#space-invaders {
+    margin: 20px 0;
+}
+
+iframe {
+    width: 100%;
+    border: 2px solid var(--node-gray);
 }
 
 @media screen and (min-width: 900px) {

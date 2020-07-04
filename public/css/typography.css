@@ -1,5 +1,5 @@
 h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p, li, a, blockquote, span {
@@ -44,10 +44,6 @@ h4 {
     font-family: 'Roboto', sans-serif;
 }
 
-#fourOhFour {
-    width: 50%;
-}
-
 #fourOhFour h3, #space-invaders {
     font-size: 60px;
     font-family: fantasy;
@@ -61,13 +57,22 @@ h4 {
 
 #fourOhFour a {
     font-size: 24px;
+    color: #3C873A;
     width: 100%;
 }
 
-#space-invaders {
-    margin: 20px 0;
+#homepage-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
 }
 
-iframe {
-    width: 100%;
+.navBtn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+#question {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    color: #fafafa;
 }
