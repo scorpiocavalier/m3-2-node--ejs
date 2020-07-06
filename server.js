@@ -27,7 +27,7 @@ express()
   .set("view engine", "ejs")
 
   // endpoints
-  .get("/question:number", (req, res) => {
+  .get("/question/:number", (req, res) => {
 		props.pageNumber = req.params.number
 		res.render(`pages/question${props.pageNumber}`, { props })
 	})

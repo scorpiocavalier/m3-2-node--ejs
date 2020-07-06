@@ -1,35 +1,15 @@
 <div class="navigation">
   <% if(Number(props.pageNumber) !== 1) { %> 
-    <a 
-      class='navBtn' 
-      href="/question<%= Number(props.pageNumber) - 1 %>"
-    >
-    Previous
-    </a>
+    <a class='navBtn' href="/question/<%= Number(props.pageNumber) - 1 %>">Previous</a>
   <% } else { %>
-    <a 
-      class='navBtn' 
-      href="/"
-    >
-    Home
-    </a>
+    <a class='navBtn' href="/">Home</a>
   <% } %> 
 
   <span id='question'>Question <%= props.pageNumber %></span>
 
   <% if(Number(props.pageNumber) !== 10) { %> 
-    <a 
-      class='navBtn' 
-      href="/question<%= Number(props.pageNumber) + 1 %>"
-    >
-    Next
-    </a>
+    <a class='navBtn' href="/question/<%= Number(props.pageNumber) + 1 %>">Next</a>
   <% } else { %>
-    <a 
-      class='navBtn' 
-      href="/"
-    >
-    Home
-    </a>
+    <a class='navBtn' href="/">Home</a>
   <% } %> 
 </div>
